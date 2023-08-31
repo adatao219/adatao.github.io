@@ -1,514 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ada Tao GHC23 - Personal Portfolio</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ada Tao GHC23 - Personal Portfolio</title>
-
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
+    <main>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="#about">About</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#education-work-experience"
+              >Education and Work Experience</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#projects">Projects</a>
+          </li>
+        </ul>
+      </nav>
 
-    <!--
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.jpg"
+              alt="Ada Tao"
+              width="100"
+            />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Ada Tao">Ada Tao</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.jpg" alt="Ada Tao" width="100">
-        </figure>
+            <p class="title">Master of Computer and Information technology</p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Ada Tao">Ada Tao</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-          <p class="title">Master of Computer and Information technology
-                            Looking for full time position in Summer 2024</p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a href="mailto:adatao@seas.upenn.edu" class="contact-link"
+                  >adatao@seas.upenn.edu</a
+                >
+              </div>
+            </li>
 
-        <div class="separator"></div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
 
-          <li class="contact-item">
+                <a href="tel:+6466561504" class="contact-link"
+                  >+1 (646) 656-1504</a
+                >
+              </div>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
 
-              <a href="mailto:adatao@seas.upenn.edu" class="contact-link">adatao@seas.upenn.edu</a>
-            </div>
+                <time datetime="1996-05-09">May 9, 1996</time>
+              </div>
+            </li>
 
-          </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-          <li class="contact-item">
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
+                <address>Philadelphia, Pennsylvania, USA</address>
+              </div>
+            </li>
+          </ul>
 
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
+          <div class="separator"></div>
 
-              <a href="tel:+6466561504" class="contact-link">+1 (646) 656-1504</a>
-            </div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
 
-          </li>
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
 
-          <li class="contact-item">
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1996-05-09">May 9, 1996</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Philadelphia, Pennsylvania, USA</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
+      <div class="main-content">
+        <section id="about" class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-      <!--
-        - #NAVBAR
+          <div class="service-content-box">
+            <h3 class="h3 highlight-title">
+              Looking for 2024 full time position!
+            </h3>
 
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Education and Work Experience</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
-          </li>
-
-
-        </ul>
-
-      </nav>
-      -->
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm second year master of Computer and Information Technology student at UPenn. I enjoy learning new technology and turning complex problems into simple through algorithm.
-            I love my Artificial Intellegence course and very excited to see how it can be utilized.
-          </p>
-
-          <p>
-            I am attending GHC onsite in 2023. Love AWS, Wawa and go birds! 
-          </p>
-        </section>
-
-
-        <!--
+            <h5 class="h5 intro-title">
+              Proficient on web design and development. Learned web development
+              through online course, on site course and enhanced by doing on
+              hands project. Skills: JavaScript, CSS, HTML, nodeJS, expressJS,
+              MongoDB, REST API Ex. Photo:D full stack project, BlitzAt web
+              development start-up
+            </h5>
+          </div>
+          <!--
           - service
         -->
-
-        <section class="service">
 
           <h3 class="h3 service-title">What i'm doing</h3>
 
           <ul class="service-list">
-
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg
-                " alt="Web development icon" width="40">
+                <img
+                  src="./assets/images/icon-dev.svg
+                "
+                  alt="Web development icon"
+                  width="40"
+                />
               </div>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Web development</h4>
 
                 <p class="service-item-text">
-                  Proficient on web design and development. Learned web development through online course, on site course and enhanced by doing on hands project.
-                  Skills: JavaScript, CSS, HTML, nodeJS, expressJS, MongoDB, REST API
-                  Ex. Photo:D full stack project, BlitzAt web development start-up
+                  Proficient on web design and development. Learned web
+                  development through online course, on site course and enhanced
+                  by doing on hands project. Skills: JavaScript, CSS, HTML,
+                  nodeJS, expressJS, MongoDB, REST API Ex. Photo:D full stack
+                  project, BlitzAt web development start-up
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img
+                  src="./assets/images/icon-dev.svg"
+                  alt="Web development icon"
+                  width="40"
+                />
               </div>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Cloud Operations</h4>
 
                 <p class="service-item-text">
-                    LOVE AWS and interned at cloud operations in summer 2023 at Digital.ai. 
-                    Skill: Kubernetes, AWS, Terraform, Docker
+                  LOVE AWS and interned at cloud operations in summer 2023 at
+                  Digital.ai.<br />
+                  Skill: Kubernetes, AWS, Terraform, Docker
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img
+                  src="./assets/images/icon-app.svg"
+                  alt="mobile app icon"
+                  width="40"
+                />
               </div>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Mobile apps</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
+                  Professional development of applications for iOS and
+                  Android.<br />
                   Skill: Flutter, Microsoft Azure, Django
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                <img
+                  src="./assets/images/icon-photo.svg"
+                  alt="camera icon"
+                  width="40"
+                />
               </div>
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Algorithm</h4>
 
                 <p class="service-item-text">
-                  I love solving backend problems using Algorithm. Different data structure are fascinating.
+                  I love solving backend problems using Algorithm. Different
+                  data structure are fascinating.
                 </p>
               </div>
-
             </li>
-
           </ul>
-
         </section>
 
-
-      <!--
+        <!--
         - #Education and Work Experience
-      -->
+        -->
+        <section
+          id="education-work-experience"
+          class="education-work-experience"
+          data-page="education-work-experience"
+        >
+          <header>
+            <h2 class="h2 article-title">Education and Work Experience</h2>
+          </header>
 
-      <article class="Education and Work Experience" data-page="Education and Work Experience">
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-        <header>
-          <h2 class="h2 article-title">Education and Work Experience</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  University of Pennsylvania
+                </h4>
 
-          <ol class="timeline-list">
+                <span>2022 — 2024</span>
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of Pennsylvania</h4>
-
-              <span>2022 — 2024</span>
-
-              <p class="timeline-text">
-                GPA: 3.85/4.00
-                Master of Computer and Information Technology
-                Relevant Courses: Data Structure & Software Design (Java), Computer Systems Programming (C/C++), Algorithms & Computation, Database Systems (SQL), Artificial Intelligence(Python), Programming for the web (SaaS)
-                Was the club president in MMDC dance crew at Penn, lead 20+ students to perform on stage!
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Lehigh University</h4>
-
-              <span>2015 — 2019</span>
-
-              <p class="timeline-text">
-                GPA: 3.67/4.00
-                BS double major in Business Infomation Systems & Accounting, minor in Japanese
-                Relevant Courses: Information Systems (SQL), Application Development for Business (Java), Managing Information Systems Analysis and Design
-                President of Business Information Systems club in my senior year. Arranged trips of 50+ student and faculty to visit Tech companies in NYC
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Hebron Academy</h4>
-
-              <span>2011 — 2015</span>
-
-              <p class="timeline-text">
-                Cum Laude and representing my class to speak in graduation
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Work Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Part-Time Associate CloudOps Engineer</h4>
-
-              <span>Aug 2023 — Present</span>
-
-              <p class="timeline-text">
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Cloud Operations Intern</h4>
-
-              <span>May 2023 — Aug 2023</span>
-
-              <p class="timeline-text">
-                • Spearheaded the implementation of a robust CI/CD process, automating the creation, deployment and testing of
-Docker Images to both private repository and public domains, resulting in a 40% reduction in production errors
-and improved release stability
-• Leveraged Kubernetes and Terraform to deploy cloud services and SaaS solutions across domains, incorporating
-dynamic routing and load balancing to support the scalability of expansive applications
-• Investigated and troubleshot 5 cloud service requests monthly, providing detailed root cause analysis, and
-implementing permanent solutions to prevent future occurrences
-• Championed Agile methodologies within the development team, facilitating daily stand-ups, sprint planning, and
-retrospectives, resulting in a 25% increase in project delivery speed and enhancing team collaboration
-
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Senior Tax Associate</h4>
-
-              <span>Oct 2021 — July 2022</span>
-
-              <p class="timeline-text">
-                • Assisting clients by analyzing global multi-jurisdictional indirect tax, unclaimed property asset recovery and data cleansing using Alteryx software and presenting the results to clients in the form of Power BI
-• Utilizing KPMG's internal tax technologies including ITAP and START tool to maximize tax refund and optimizing tax saving through rebuilding the corporations' structures
-
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-                <h4 class="h4 timeline-item-title">Senior Tax Associate</h4>
-  
-                <span>Sep 2019 — Sep 2021</span>
-  
                 <p class="timeline-text">
-                    • Preparing and reviewing >100 state income franchise tax returns and sales and use tax returns for S&P 500 clients and addressing client's state and local tax questions accordingly
-                    • Conducting tax researches and preparing written memos regarding IRS tax updates, state regulations and court rulings
-                    • Taking charge of engagement by sending acknowledge email, tracking the progress of email and conducting weekly team
-                    catchup meeting to ensure the follow up on different items
+                  GPA: 3.85/4.00<br />
+                  Master of Computer and Information Technology<br />
+                  Relevant Courses: Data Structure & Software Design (Java),
+                  Computer Systems Programming (C/C++), Algorithms &
+                  Computation, Database Systems (SQL), Artificial
+                  Intelligence(Python), Programming for the web (SaaS)<br />
+                  Was the club president in MMDC dance crew at Penn, lead 20+
+                  students to perform on stage!
                 </p>
-  
               </li>
 
-          </ol>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Lehigh University</h4>
 
+                <span>2015 — 2019</span>
+
+                <p class="timeline-text">
+                  GPA: 3.67/4.00<br />
+                  BS double major in Business Infomation Systems & Accounting,
+                  minor in Japanese<br />
+                  Relevant Courses: Information Systems (SQL), Application
+                  Development for Business (Java), Managing Information Systems
+                  Analysis and Design<br />
+                  President of Business Information Systems club in my senior
+                  year. Arranged trips of 50+ student and faculty to visit Tech
+                  companies in NYC
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Hebron Academy</h4>
+
+                <span>2011 — 2015</span>
+
+                <p class="timeline-text">
+                  Cum Laude and representing my class to speak in graduation
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Work Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Part-Time Associate CloudOps Engineer
+                </h4>
+
+                <span>Aug 2023 — Present</span>
+
+                <p class="timeline-text"></p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Cloud Operations Intern</h4>
+
+                <span>May 2023 — Aug 2023</span>
+
+                <p class="timeline-text">
+                  • Spearheaded the implementation of a robust CI/CD process,
+                  automating the creation, deployment and testing of Docker
+                  Images to both private repository and public domains,
+                  resulting in a 40% reduction in production errors and improved
+                  release stability<br />
+                  • Leveraged Kubernetes and Terraform to deploy cloud services
+                  and SaaS solutions across domains, incorporating dynamic
+                  routing and load balancing to support the scalability of
+                  expansive applications<br />
+                  • Investigated and troubleshot 5 cloud service requests
+                  monthly, providing detailed root cause analysis, and
+                  implementing permanent solutions to prevent future
+                  occurrences<br />
+                  • Championed Agile methodologies within the development team,
+                  facilitating daily stand-ups, sprint planning, and
+                  retrospectives, resulting in a 25% increase in project
+                  delivery speed and enhancing team collaboration
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Senior Tax Associate</h4>
+
+                <span>Oct 2021 — July 2022</span>
+
+                <p class="timeline-text">
+                  • Assisting clients by analyzing global multi-jurisdictional
+                  indirect tax, unclaimed property asset recovery and data
+                  cleansing using Alteryx software and presenting the results to
+                  clients in the form of Power BI<br />
+                  • Utilizing KPMG's internal tax technologies including ITAP
+                  and START tool to maximize tax refund and optimizing tax
+                  saving through rebuilding the corporations' structures
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Senior Tax Associate</h4>
+
+                <span>Sep 2019 — Sep 2021</span>
+
+                <p class="timeline-text">
+                  • Preparing and reviewing >100 state income franchise tax
+                  returns and sales and use tax returns for S&P 500 clients and
+                  addressing client's state and local tax questions
+                  accordingly<br />
+                  • Conducting tax researches and preparing written memos
+                  regarding IRS tax updates, state regulations and court
+                  rulings<br />
+                  • Taking charge of engagement by sending acknowledge email,
+                  tracking the progress of email and conducting weekly team
+                  catchup meeting to ensure the follow up on different items
+                </p>
+              </li>
+            </ol>
+          </section>
         </section>
 
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #Projects
-      -->
-
-      <article class="Projects" data-page="Projects">
+        -->
 
         <header>
           <h2 class="h2 article-title">Projects</h2>
         </header>
 
-        <section class="projects">
-
+        <section id="projects" class="projects" data-page="projects">
           <ul class="filter-list">
-
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
             </li>
-
-
           </ul>
 
-
           <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="web development"
+            >
               <a href="#">
-
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img
+                    src="./assets/images/project-1.jpg"
+                    alt="finance"
+                    loading="lazy"
+                  />
                 </figure>
 
                 <h3 class="project-title">Finance</h3>
 
                 <p class="project-category">Web development</p>
-
               </a>
             </li>
-
           </ul>
-
         </section>
+      </div>
 
-      </article>
-
-
-
-
-
-  <!--
+      <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+      <script src="./assets/js/script.js"></script>
 
-  <!--
+      <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+    </main>
+  </body>
 </html>
