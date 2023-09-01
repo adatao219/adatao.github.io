@@ -1973,25 +1973,11 @@ textarea.form-input::-webkit-resizer {
   margin-bottom: 20px; /* Adds some space below the image */
   max-width: 22%;      /* Sets a max width for the image */
   height: auto;        /* Keeps the image's aspect ratio */
-  border: 1px solid rgb(154, 152, 152); /* Add a border/frame to the image */
+  border: 1px solid rgb(174, 173, 173); /* Add a border/frame to the image */
   border-radius: 15px;   /* Rounded corners */
 
 }
-.resume-button {
-  background-color: #333;  /* Dark background color */
-  color: #fff;             /* White text color */
-  border: none;            /* Remove border */
-  padding: 10px 20px;      /* Some padding */
-  border-radius: 5px;      /* Rounded corners */
-  cursor: pointer;         /* Hand cursor on hover */
-  text-decoration: none;   /* Remove any underline */
-  font-weight: bold;       /* Bold text */
-}
 
-/* Change button appearance when hovered */
-.resume-button:hover {
-  background-color: #555;  /* Slightly lighter background on hover */
-}
 
 
 
