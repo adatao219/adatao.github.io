@@ -1966,6 +1966,18 @@ textarea.form-input::-webkit-resizer {
   }
 }
 
+.right-float-img {
+  float: right;        /* Floats the image to the right */
+  display: block;
+  margin-left: 20px;   /* Adds some space between the image and the content */
+  margin-bottom: 20px; /* Adds some space below the image */
+  max-width: 22%;      /* Sets a max width for the image */
+  height: auto;        /* Keeps the image's aspect ratio */
+  border: 1px solid rgb(250, 249, 249); /* Add a border/frame to the image */
+  border-radius: 15px;   /* Rounded corners */
+
+}
+
 
 
 
