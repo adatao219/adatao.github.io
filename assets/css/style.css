@@ -1973,7 +1973,7 @@ textarea.form-input::-webkit-resizer {
   margin-bottom: 20px; /* Adds some space below the image */
   max-width: 22%;      /* Sets a max width for the image */
   height: auto;        /* Keeps the image's aspect ratio */
-  border: 1px solid rgb(250, 249, 249); /* Add a border/frame to the image */
+  border: 1px solid rgb(154, 152, 152); /* Add a border/frame to the image */
   border-radius: 15px;   /* Rounded corners */
 
 }
